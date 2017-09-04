@@ -10,7 +10,7 @@ var bot;
 
 if(process.env.NODE_ENV === 'production') {
   bot = new Bot(config.TelegramToken);
-  bot.setWebHook('https://YOUR-HEROKU-APP-ADDRESS/' + bot.token);
+  bot.setWebHook('https://tranquil-cliffs-91379.herokuapp.com/' + bot.token);
 }
 else {
   bot = new Bot(config.TelegramToken, { polling: true });
